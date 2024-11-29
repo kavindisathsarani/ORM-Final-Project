@@ -344,7 +344,8 @@ public class PaymentFormController {
 
             double a = Double.parseDouble(lblPaidAmount.getText());
 
-            // registration table eke thiyena paidamount ekata aluthin pay karan amount eka ekathu kranawa
+
+            //this will add the new pay amount to already stored registration table's paidamount
             double amount = paidAmount + a;
 
             RegistrationDTO registrationDTO = new RegistrationDTO(regId, amount);

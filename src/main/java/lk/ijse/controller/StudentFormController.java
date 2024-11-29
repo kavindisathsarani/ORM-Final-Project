@@ -81,7 +81,8 @@ public class StudentFormController {
     @FXML
     private JFXButton btnStudentUpdate;
 
-    // system ekata log wechcha kenage userID eka
+
+    //the userId of the one who login to the system
     int userID = UserSession.getInstance().getUserId();
 
     StudentBO studentBO  = (StudentBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.STUDENT);

@@ -3,6 +3,7 @@
 <!-- Import PasswordField -->
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
@@ -19,7 +20,7 @@
    <children>
       <ImageView fitHeight="696.0" fitWidth="911.0" layoutX="-69.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../assets/images/loginBG.png" />
+            <Image url="@../assets/images/file.jpg" />
          </image>
       </ImageView>
       <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#ffffff29" height="373.0" layoutX="263.0" layoutY="137.0" stroke="#ffffffab" strokeType="INSIDE" width="334.0" />
@@ -37,10 +38,13 @@
             <MotionBlur />
          </effect></Line>
       <Line endX="134.5611572265625" layoutX="416.0" layoutY="406.0" startX="-100.0" stroke="#ffffff26" />
-      <JFXButton layoutX="368.0" layoutY="434.0" onAction="#btnLoginOnAction" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Login" textFill="#0075f2">
+      <JFXButton buttonType="RAISED" layoutX="368.0" layoutY="434.0" onAction="#btnLoginOnAction" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #FF7438; -fx-background-radius: 20;" text="Login" textFill="#f4efec">
          <font>
             <Font name="System Bold Italic" size="13.0" />
-         </font></JFXButton>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
 
 
    </children>

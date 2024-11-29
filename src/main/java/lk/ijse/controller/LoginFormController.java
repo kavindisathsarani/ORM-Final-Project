@@ -66,8 +66,8 @@ public class LoginFormController {
 
         try {
             if (userName.equals(temporaryUserName)  && password.equals(temporaryPassword)) {
-                /*methana krala thinne wena kenekge pc ekakata me system eka dammothi mulin DB ekk nathi
-                  nisa tempory login details tikak dila manual user id ekakui role ekakui dapu eka*/
+                /*in here, There is no database at first if this system run in an another pc.so i've given
+                temporary login details(manual user id and role)*/
 
                 // Store userId and role in Session singleton
                 UserSession.getInstance().setUser(123, "tempory_user");

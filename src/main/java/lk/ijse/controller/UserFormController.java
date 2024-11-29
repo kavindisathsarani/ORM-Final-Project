@@ -75,7 +75,7 @@ public class UserFormController {
 
 
     void clickEnterButtonMoveCursor() {
-        // username text field eka type krl enter karahama cursor eka password field ekata yanawa
+        //after typed in the username textfield and press enter, the cursor will go to the password field
         txtUserName.setOnAction(event -> txtUserPassword.requestFocus());
     }
 
